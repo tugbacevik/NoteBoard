@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace NoteBoard.Model
 {
-    public class Class1
+    public enum UserRole
     {
+        Admin,
+        Standart
     }
+
 }
