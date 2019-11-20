@@ -55,7 +55,11 @@
     <Compile Include="Mapping\PasswordMapping.cs" />
     <Compile Include="Mapping\UserMapping.cs" />
     <Compile Include="NoteBoardDBContext.cs" />
+    <Compile Include="NoteBoardsDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\NoteDAL.cs" />
+    <Compile Include="Repositories\PasswordDAL.cs" />
+    <Compile Include="Repositories\UserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,6 +71,7 @@
       <Name>NoteBoard.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
