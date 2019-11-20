@@ -100,6 +100,7 @@
             this.btnUpdatePassword.TabIndex = 15;
             this.btnUpdatePassword.Text = "Şifreyi Değiştir";
             this.btnUpdatePassword.UseVisualStyleBackColor = true;
+            this.btnUpdatePassword.Click += new System.EventHandler(this.BtnUpdatePassword_Click);
             // 
             // frmChangePassword
             // 
@@ -118,6 +119,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmChangePassword";
             this.Text = "Şifre Değiştir";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmChangePassword_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

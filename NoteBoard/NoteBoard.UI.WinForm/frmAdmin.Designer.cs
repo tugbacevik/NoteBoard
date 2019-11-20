@@ -51,6 +51,7 @@
             this.lstUsers.TabIndex = 0;
             this.lstUsers.UseCompatibleStateImageBehavior = false;
             this.lstUsers.View = System.Windows.Forms.View.Details;
+            this.lstUsers.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.LstUsers_MouseDoubleClick);
             // 
             // columnHeader1
             // 
@@ -83,6 +84,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdmin";
             this.Text = "Admin Paneli";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAdmin_FormClosed);
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.ResumeLayout(false);
 

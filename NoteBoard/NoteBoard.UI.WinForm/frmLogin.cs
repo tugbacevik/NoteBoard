@@ -20,7 +20,7 @@ namespace NoteBoard.UI.WinForm
         public frmLogin()
         {
             InitializeComponent();
-            _userController = new UserController();
+           
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -33,12 +33,13 @@ namespace NoteBoard.UI.WinForm
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            _userController = new UserController();
             User currentUser = _userController.GetByLogin(txtUsername.Text, txtPassword.Text);
             if (currentUser != null)
             {
                 if (currentUser.UserRole == UserRole.Standart)
                 {
-                    frmMain frm = new frmMain();
+                    frmMain frm = new frmMain(currentUser);
                     //frm main ctorunda user göndericez
                     frm.Owner = this;
                     frm.Show();

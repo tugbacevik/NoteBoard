@@ -79,7 +79,7 @@ namespace NoteBoard.BLL
             User user = users.Where(a => a.IsActive && a.UserName == username).SingleOrDefault();
             if (user !=null)
             {
-                Password pass = user.Passwords.Where(a => a.IsActive && a.PasswordText == password).Single();
+                Password pass = user.Passwords.Where(a => a.IsActive && a.PasswordText == password).FirstOrDefault();
                 if (pass == null)
                 {
                     return null;
