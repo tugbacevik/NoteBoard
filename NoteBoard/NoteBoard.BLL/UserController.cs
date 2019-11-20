@@ -60,7 +60,9 @@ namespace NoteBoard.BLL
                 user.IsActive = false;
                 return Update(user);
                 //veritabanından silmiyoruz, aktifliğini kapatıyoruz.
-                //30 günden fazla pasif kalırsa silnsin
+                //30 günden fazla pasif kalırsa silinsin
+                //Admin kara listeye alamıyor 
+                //
             }
             catch (Exception ex)
             {
