@@ -80,9 +80,10 @@
             this.ClientSize = new System.Drawing.Size(589, 418);
             this.Controls.Add(this.lstUsers);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdmin";
             this.Text = "Admin Paneli";
+            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.ResumeLayout(false);
 
         }

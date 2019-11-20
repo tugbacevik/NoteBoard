@@ -52,6 +52,7 @@ namespace NoteBoard.UI.WinForm
                     this.Hide();
                 }
             }
+
             else
             {
                 MessageBox.Show("Böyle bir kullanıcı yok, kayıt olabilirsiniz.");
